@@ -1,4 +1,4 @@
-# running-optimization
+# Running optimization project using Arduinos, IMU sensors and Jupyter Notebook
 
 The goals / steps of this project are the following:
 1. Upload code from `running_track.ino` to the circuit
