@@ -29,7 +29,7 @@ After research, I decided to build a circuit using Arduino Nano because of its s
 Once I built the circuit, I used Arduino IDE to verify that the circuit is working properly.
 
 
-```
+```cpp
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
@@ -80,7 +80,7 @@ I extended the circuit to operate using 9V battery as shown below:
 Then, the next step was to make the circuit work without a computer. To do so, I had to find a way for the circuit to persist data while I run without a USB port. To do so, I decided to utilize EEPROM which is available in Arduino Nano. The idea was to store sensor events to EEPROM while I run, and read the stored data when the circuit is connected to a computer for data analysis. Here is the code to do so in Arduino:
 
 
-```
+```cpp
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
@@ -151,7 +151,7 @@ For the data analysis, I used two USB cables each of which is attached to two Ar
 
 And here is the snippet of the code in Jupyter Notebook for data analysis:
 
-```
+```python
 from time import *
 import numpy as np
 import math
