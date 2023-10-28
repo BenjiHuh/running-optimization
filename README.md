@@ -22,7 +22,7 @@ After research, I decided to build a circuit using Arduino Nano because of its s
 
 #### <span style="text-decoration:underline;">The schematics for the circuit:</span>
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/schematics_circuit.png "The schematics for the circuit")
 
 ### 2. Test the circuit
 
@@ -74,7 +74,7 @@ The next challenge was to make the circuit operate without being connected to a 
 
 I extended the circuit to operate using 9V battery as shown below:
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/circuit_with_battery.png "circuit with 9v battery")
 
 
 Then, the next step was to make the circuit work without a computer. To do so, I had to find a way for the circuit to persist data while I run without a USB port. To do so, I decided to utilize EEPROM which is available in Arduino Nano. The idea was to store sensor events to EEPROM while I run, and read the stored data when the circuit is connected to a computer for data analysis. Here is the code to do so in Arduino:
@@ -147,7 +147,7 @@ The next was to write a program to analyze data from two Arduino circuits (left 
 
 For the data analysis, I used two USB cables each of which is attached to two Arduino circuits, COM3 and COM4 respectively. The data is sent through PySerial to a Jupyter Notebook.
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/system_design.png "high-level system design")
 
 And here is the snippet of the code in Jupyter Notebook for data analysis:
 
@@ -240,19 +240,19 @@ drawGraph('Graph', ad1, ad2)
 
 Capture a combination of accelerometers in Arduinos for the left and right foot without the need of a computer.
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/circuits_left_and_right.png "circuits for the left and right foot")
 
 ### Analyze runner’s data
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/graphs_accelerometer.png "analyzing runner's data from jupyter notebook 1")
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/jupyter_notebook_result.png "analyzing runner's data from jupyter notebook 2")
 
 ## Components (with picture)
 
 ### Hardware
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/hardware.png "hardware")
 
 1. Arduino Nano
 
