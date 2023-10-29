@@ -269,4 +269,4 @@ Capture a combination of accelerometers in Arduinos for the left and right foot 
 
 2. Virtual Python: I used Virtual Python for prototyping. For data analysis, I used a Jupyter Notebook. 
 
-3. Jupyter notebook: I used Jupyter Notebook with Bokeh for charts. PySerial has been used for communicating with Ardnuino through serial ports. \
+3. Jupyter notebook: I used Jupyter Notebook with Bokeh for charts. PySerial has been used for communicating with Ardnuino through serial ports.
