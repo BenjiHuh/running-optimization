@@ -233,7 +233,7 @@ def drawGraph(label, ad1, ad2):
 drawGraph('Graph', ad1, ad2)
 ```
 
-## Feature (with picture)
+## Feature
 
 
 ### Capture runner’s data from both feet
